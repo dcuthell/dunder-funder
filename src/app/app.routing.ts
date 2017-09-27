@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     component: ProjectViewComponent
   },
   {
-    path: 'albums/:id',
+    path: 'projects/:id',
     component: ProjectDetailComponent
   }
 ];

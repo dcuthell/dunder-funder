@@ -1,0 +1,20 @@
+{ "projects": [{
+  "title": "Buddy wants a sled",
+  "type": "Project",
+  "category": "Recreation",
+  "description": "Hey I'm Buddy and I'm broke AF bud, can't even buy a bottle of black label and some CCs. I'm hoping you kind strangers can send me some Loonies so I can go out for a rip this winter",
+  "creator": "Buddy LeGuy"
+  }, {
+    "title": "Buddy wants a hottub",
+    "type": "Project",
+    "category": "Home Furnishings",
+    "description": "The missus wants a hottub and I don't have the money for that. Do you?",
+    "creator": "Buddy LeGuy"
+  }, {
+    "title": "Buddy wants a Vacation",
+    "type": "Project",
+    "category": "Vacations",
+    "description": "The missus is driving me nuts. I'd like to go to Vegas. Can you be the make-it-happen captain?",
+    "creator": "Buddy LeGuy"
+  }]
+}
