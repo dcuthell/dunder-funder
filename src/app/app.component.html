@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Dunder Funder</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="project-view">View Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <img src="https://casinodeal.co.uk/wp-content/uploads/2017/04/dundercasinologo.jpg" alt="" class="dunder-funder-img">
+  <img src="http://www.daviecountyblog.com/wp-content/uploads/2010/10/Funder_Logo.jpg" alt="" class="dunder-funder-img">
+  <router-outlet></router-outlet>
+</div>
