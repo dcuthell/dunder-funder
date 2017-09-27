@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectViewComponent } from './project-view/project-view.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutComponent,
-    ProjectViewComponent
+    ProjectViewComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,

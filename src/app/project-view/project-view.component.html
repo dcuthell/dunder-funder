@@ -1,3 +1,7 @@
 <h2>Project Listing</h2>
 
-<p>All our fine products will be listed here shortly!</p>
+<div *ngFor="let project of projects">
+  <div class="panel panel-info">
+    <h3><b>{{project.title}}</b> created by <i>{{project.creator}}</i></h3>
+  </div>
+</div>
