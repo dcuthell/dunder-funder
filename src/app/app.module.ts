@@ -11,7 +11,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectViewComponent } from './project-view/project-view.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import { masterFirebaseConfig } from './api-keys'
+import { masterFirebaseConfig } from './api-keys';
+import { AdminComponent } from './admin/admin.component';
+import { EditElbumComponent } from './edit-elbum/edit-elbum.component'
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,13 +28,17 @@ export const firebaseConfig = {
     HomepageComponent,
     AboutComponent,
     ProjectViewComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    AdminComponent,
+    EditElbumComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

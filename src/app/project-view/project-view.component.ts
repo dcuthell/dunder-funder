@@ -19,8 +19,8 @@ export class ProjectViewComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
-  goToDetailPage(clickedProject: Project) {
-     this.router.navigate(['albums', clickedProject.id]);
+  goToDetailPage(clickedProject) {
+     this.router.navigate(['projects', clickedProject.$key]);
    };
 
 }

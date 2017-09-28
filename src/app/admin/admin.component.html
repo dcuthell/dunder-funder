@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Project to Inventory</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Project Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Project Type:</label>
+        <br>
+        <input #newType>
+      </div>
+
+      <div>
+        <label>Project Category:</label>
+        <br>
+        <textarea #newCategory></textarea>
+      </div>
+
+      <div>
+        <label>Project Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+
+      <div>
+        <label>Project Creator:</label>
+        <br>
+        <textarea #newCreator></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newType.value, newCategory.value, newDescription.value, newCreator.value); newTitle.value=''; newType.value=''; newCategory.value=''; newDescription.value=''; newCreator.value=''">Add</button>
+    </div>
+  </div>
+</div>

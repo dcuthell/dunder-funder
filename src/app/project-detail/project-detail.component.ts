@@ -13,7 +13,7 @@ import { ProjectService } from '../project.service';
 
 export class ProjectDetailComponent implements OnInit {
 
-  projectId: string = null;
+  projectId: string;
   projectToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private projectService: ProjectService) { }

@@ -1,6 +1,6 @@
 <h2>Project Listing</h2>
 
-<div *ngFor="let project of projects" (click)="goToDetailPage(project)" class="panel panel-info">
+<div *ngFor="let project of projects | async" (click)="goToDetailPage(project)" class="panel panel-info">
   <div class="panel-body">
     <h3><b>{{project.title}}</b> created by <i>{{project.creator}}</i></h3>
   </div>

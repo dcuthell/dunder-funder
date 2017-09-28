@@ -1,7 +1,7 @@
 <div>
-  <h3>{{projectToDisplay.title}}</h3>
-  <h4>{{projectToDisplay.creator}}</h4>
-  <p>Type: {{projectToDisplay.type}}</p>
-  <p>Category: {{projectToDisplay.category}}</p>
-  <p>{{projectToDisplay.details}}</p>
+  <h3>{{(projectToDisplay | async)?.title}}</h3>
+  <h4>{{(projectToDisplay | async)?.creator}}</h4>
+  <p>Type: {{(projectToDisplay | async)?.type}}</p>
+  <p>Category: {{(projectToDisplay | async)?.category}}</p>
+  <p>{{(projectToDisplay | async)?.description}}</p>
 </div>
